@@ -9,18 +9,18 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>thirdweb Deploy - Custom Staking Contract</h1>
+      <h1 className={styles.h1}>Hey Hey Thriend!!! Glad to see you here we have a some rewards for you.</h1>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("/mint")}
+          onClick={() => router.push("https://mint.thriends.io")}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
+          <Image src="/icons/LoyaltyCardMint.png" alt="drop" width={100} height={64} />
+          <h2 className={styles.selectBoxTitle}>Mint Thriends</h2>
           <p className={styles.selectBoxDescription}>
-            Use the NFT Drop Contract to claim an NFT from the collection.
+            Mint your self a Thriend and join the Threaded community!
           </p>
         </div>
 
@@ -30,11 +30,10 @@ const Home: NextPage = () => {
           onClick={() => router.push("/stake")}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
+          <Image src="/icons/LoyaltyCardStake.png" alt="token" width={100} height={64} />
+          <h2 className={styles.selectBoxTitle}>Stake Thriends</h2>
           <p className={styles.selectBoxDescription}>
-            Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
+            Stake your Thriend to claim Thriend Meme Token!
           </p>
         </div>
       </div>
