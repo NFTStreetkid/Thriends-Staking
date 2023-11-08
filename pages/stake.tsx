@@ -62,19 +62,19 @@ const Stake: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div>Loading my Thriend...</div>;
   }
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Stake Your NFTs</h1>
+      <h1 className={styles.h1}>Stake Your Thriend</h1>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
         <ConnectWallet />
       ) : (
         <>
-          <h2>Your Tokens</h2>
+          <h2>Your Thriend Tokens</h2>
           <div className={styles.tokenGrid}>
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
@@ -99,11 +99,11 @@ const Stake: NextPage = () => {
             action={(contract) => contract.call("claimRewards")}
             contractAddress={stakingContractAddress}
           >
-            Claim Rewards
+            Claim Token Rewards
           </Web3Button>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Staked NFTs</h2>
+          <h2>Your Staked Thriends</h2>
           <div className={styles.nftBoxGrid}>
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
@@ -115,7 +115,7 @@ const Stake: NextPage = () => {
           </div>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Unstaked NFTs</h2>
+          <h2>Your Unstaked Thriends</h2>
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
               <div className={styles.nftBox} key={nft.metadata.id.toString()}>
@@ -128,7 +128,7 @@ const Stake: NextPage = () => {
                   contractAddress={stakingContractAddress}
                   action={() => stakeNft(nft.metadata.id)}
                 >
-                  Stake
+                  Stake Thriends
                 </Web3Button>
               </div>
             ))}
