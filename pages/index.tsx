@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           <Image src="/icons/LoyaltyCardMint.png" alt="drop" width={100} height={64} />
           <h2 className={styles.selectBoxTitle}>Mint Thriends</h2>
           <p className={styles.selectBoxDescription}>
-            Mint your self a Thriend and join the Threaded community!
+            Mint your self a Thriend!
           </p>
         </div>
 
