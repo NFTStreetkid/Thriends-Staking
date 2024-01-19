@@ -9,15 +9,6 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       {/* Top Section */}
       <h1 className={styles.h1}>Hey Hey Thriend!!! Glad to see you here we have a some rewards for you.</h1>
-      <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push("https://mint.thriends.io")}
-        >
-          {/* Mint a new NFT */}
-          <Image src="/icons/LoyaltyCardMint.png" alt="drop" width={100} height={64} />
-          <h2 className={styles.selectBoxTitle}>Home Page</h2>
-        </div>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -43,6 +34,15 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescription}>
             Stake your Thriend to claim Thriend Meme Token!
           </p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("https://mint.thriends.io")}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/LoyaltyCardMint.png" alt="drop" width={100} height={64} />
+          <h2 className={styles.selectBoxTitle}>Home Page</h2>
         </div>
       </div>
     </div>
