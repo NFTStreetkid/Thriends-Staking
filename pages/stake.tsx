@@ -73,6 +73,7 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <hr className={`${styles.divider} ${styles.spacerTop}`} />
       <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '15px'}}
     type="button"
     onClick={(e) => {
@@ -87,8 +88,6 @@ const Stake: NextPage = () => {
       window.location.href='https://mint.thriends.io';
       }}
 > Mint</button>
-      <hr className={`${styles.divider} ${styles.spacerTop}`} />
-
       {!address ? (
         <ConnectWallet />
       ) : (
