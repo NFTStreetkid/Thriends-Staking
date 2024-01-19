@@ -88,7 +88,7 @@ const Stake: NextPage = () => {
         <ConnectWallet style={{ top: '200px'}}/>
       ) : (
         <>
-          <h2>Your Thriend Tokens</h2>
+          <h2>$TT</h2>
           <div className={styles.tokenGrid}>
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
