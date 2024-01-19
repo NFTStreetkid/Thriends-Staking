@@ -67,14 +67,14 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '15px'}}
+      <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '-60px'}}
     type="button"
     onClick={(e) => {
       e.preventDefault();
       window.location.href='https://thriends.io';
       }}
 > Home</button>
-<button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '100px', top: '15px'}}
+<button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '100px', top: '-60px'}}
     type="button"
     onClick={(e) => {
       e.preventDefault();
@@ -85,7 +85,7 @@ const Stake: NextPage = () => {
       <h1 className={styles.h1}>Stake Your Thriend</h1>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
       {!address ? (
-        <ConnectWallet />
+        <ConnectWallet style={{ top: '200px'}}/>
       ) : (
         <>
           <h2>Your Thriend Tokens</h2>
