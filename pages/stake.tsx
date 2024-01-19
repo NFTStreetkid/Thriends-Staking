@@ -80,7 +80,13 @@ const Stake: NextPage = () => {
       window.location.href='https://thriends.io';
       }}
 > Home</button>
-      <h1 className={styles.h1}>Stake Your Thriend</h1>
+      <h1 className={styles.h1}>Stake Your Thriend</h1> <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '15px'}}
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href='https://mint.thriends.io';
+      }}
+> Mint</button>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
