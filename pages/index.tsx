@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       {/* Top Section */}
       <h1 className={styles.h1}>Hey Hey Thriend!!! Glad to see you here we have a some rewards for you.</h1>
-      <div>
+      <div className={styles.optionSelectBox}>
       <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '200px', top: '15px'}}
     type="button"
     onClick={(e) => {
