@@ -62,13 +62,7 @@ const Stake: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div><button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '15px'}}
-    type="button"
-    onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://thriends.io';
-      }}
-> Home</button>Loading my Thriend...</div>;
+    return <div>Loading my Thriend...</div>;
   }
 
   return (
