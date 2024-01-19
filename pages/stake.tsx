@@ -67,14 +67,14 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '15px', top: '-60px'}}
+      <button className="tw-web3button css-xygf67" style={{ position: 'absolute', left: '15px', top: '-60px'}}
     type="button"
     onClick={(e) => {
       e.preventDefault();
       window.location.href='https://thriends.io';
       }}
 > Home</button>
-<button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '100px', top: '-60px'}}
+<button className="tw-web3button css-xygf67" style={{ position: 'absolute', left: '100px', top: '-60px'}}
     type="button"
     onClick={(e) => {
       e.preventDefault();
