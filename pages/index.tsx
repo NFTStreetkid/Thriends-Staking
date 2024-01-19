@@ -10,13 +10,14 @@ const Home: NextPage = () => {
       {/* Top Section */}
       <h1 className={styles.h1}>Hey Hey Thriend!!! Glad to see you here we have a some rewards for you.</h1>
       <div className={styles.nftBoxGrid}>
+        <div>
       <button className="tw-connect-wallet css-hfyyri" style={{ position: 'absolute', left: '200px', top: '15px'}}
     type="button"
     onClick={(e) => {
       e.preventDefault();
       window.location.href='https://thriends.io';
       }}
-> Home</button>
+> Home</button></div>
         <div
           className={styles.optionSelectBox}
           role="button"
