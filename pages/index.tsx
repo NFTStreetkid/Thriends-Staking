@@ -38,10 +38,9 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("https://mint.thriends.io")}
+          onClick={() => router.push("https://thriends.io")}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/LoyaltyCardMint.png" alt="drop" width={100} height={64} />
           <h2 className={styles.selectBoxTitle}>Home Page</h2>
         </div>
       </div>
